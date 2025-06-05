@@ -1,0 +1,84 @@
+{% extends "template.html" %}
+
+{% block titulo %}
+  Quem Somos
+{% endblock %}
+
+{% block conteudo %}
+  <style>
+    .quem-somos-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 160px); /* ajusta para descontar navbar + footer */
+      padding: 20px;
+    }
+
+    .quem-somos-container {
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .quem-somos-container h1 {
+      color: #007bff;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .quem-somos-container p {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .quem-somos-container h2 {
+      font-size: 24px;
+      margin-top: 30px;
+      color: #007bff;
+    }
+
+    .quem-somos-container ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 15px;
+      text-align: left;
+    }
+
+    .quem-somos-container li {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .quem-somos-container a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .quem-somos-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <div class="quem-somos-wrapper">
+    <div class="quem-somos-container">
+      <h1>Quem Somos</h1>
+      <p>Somos uma empresa dedicada a oferecer os melhores produtos e serviços.</p>
+      <p>Nossa missão é atender com excelência e inovação.</p>
+
+      <h2>Contato</h2>
+      <ul>
+        <li><strong>Email:</strong> contato@empresa.com</li>
+        <li><strong>Telefone:</strong> (11) 99999-9999</li>
+        <li><strong>Instagram:</strong> <a href="https://instagram.com/suaempresa" target="_blank">@suaempresa</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/company/suaempresa" target="_blank">suaempresa</a></li>
+        <li><strong>Facebook:</strong> <a href="https://facebook.com/suaempresa" target="_blank">suaempresa</a></li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}
