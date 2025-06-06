@@ -5,7 +5,7 @@ ele se baseia em um sistema de compras, onde qualquer pessoa consegue cadastrar 
 mas somente o admin pode ver os usuarios,edita-los ou exclui-los
 Foi desenvolvido em python por meio da frameqork Django
 As Funções disponiveis no dashboard somento são exibidas quando o usuario está logada
-
+A API FAKE STORE AS VEZES NÂO FUNCIONA FOI ADICIONADO UM COMANDO PARA SEGUIR APAGINA APÓS 3 SEGUNDO SEM RESPOSTA
 COMANDOS PARA EXECUTAR AO BAIXAR(EXECUTE NO CMD)
 python -m venv venv
 venv\Scripts\activate
