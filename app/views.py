@@ -132,12 +132,17 @@ def excluirUsuario(request, id_usuario):
 
 def listar_produtos(request):
     sessao = verificar_sessao(request)
-    if sessao: return sessao
+    if sessao:
+        return sessao
+
     produtos_db = Produto.objects.all()
+
     try:
-        produtos_api = requests.get("https://fakestoreapi.com/products").json()
+        response = requests.get("https://fakestoreapi.com/products", timeout=3)
+        produtos_api = response.json()
     except:
         produtos_api = []
+
     context = get_contexto_logado(request, {
         'produtos_db': produtos_db,
         'produtos_api': produtos_api,
